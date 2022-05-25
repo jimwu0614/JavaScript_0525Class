@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const daTe = new Date();
+        console.log(daTe);
+        console.log(typeof (daTe));
+
+        console.log(daTe.getFullYear());
+    </script>
+
+
+
+    <script>
+        // 取得現在時間
+        const date = new Date();
+        // console.log(date);
+        // console.log(typeof(date));
+
+        // 建立時間
+        // const createDate = new Date(2022,00,01,10,11,12);
+        // console.log(createDate);
+
+        // date.getFullYear();
+        // console.log(date.getFullYear());
+        // date.getFullMonth()+1; //0-11
+        // date.getDate();
+        // date.getHour();
+        // date.getMinutes();
+        // date.getSeconds();
+
+
+        // 倒數日期 取件日3天
+        function addDays(numDate) {
+            console.log('addDays Function');
+            // date.getDate();
+            console.log(date.getDate());
+            let thisDate = date.getDate(); //25
+            date.setDate(28);
+
+        }
+
+
+        addDays(3);
+    </script>
+</body>
+
+</html>
